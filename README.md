@@ -16,9 +16,11 @@ Chains a chatbot on Dialogflow, which is an integrated action from Google Assist
 ## Install
 1. open `hack_arduino/bluetooth_Flora.ino` 
 2. load code into Flora
+3. create Dialogflow intents "activate" and "deactivate"
+4. connect webhook of Dialogflow to ngrok endpoint
 
 ## Usage
 1. Turn on Battery
-2. Connect computer to Flora via Bluetooth
-3. run `hack_python/example.2` to start the local webserver and the bluetooth communication 
+2. Connect computer to Flora via Bluetooth (Password: 1234)
+3. run `hack_python/example.2 /dev/tty.Flora-9-DevB` (might have a different name, check /dev) to start the local webserver and the bluetooth communication 
 4. run `hack_python/requestGET.py` to fix the bug, that the bluetooth Serial listener on the arduino Flora is blocking the code
