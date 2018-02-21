@@ -24,3 +24,7 @@ Chains a chatbot on Dialogflow, which is an integrated action from Google Assist
 2. Connect computer to Flora via Bluetooth (Password: 1234)
 3. run `hack_python/example.2 /dev/tty.Flora-9-DevB` (might have a different name, check /dev) to start the local webserver and the bluetooth communication 
 4. run `hack_python/requestGET.py` to fix the bug, that the bluetooth Serial listener on the arduino Flora is blocking the code
+
+### Info
+The modules where testet in **Python2.7**
+For the python `import Serial` you have to install the `pyserial` package (notice the **py** infront?)
